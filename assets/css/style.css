@@ -1,0 +1,111 @@
+body {
+  font-family:Verdana, Geneva, sans-serif;
+  
+}
+
+body a {
+  
+  text-decoration:none;
+}
+
+
+
+.login {
+  width:30%;
+
+ margin:auto; 
+ border:solid thin #a90329; 
+ background-color:#FFF; 
+ padding:20px; 
+ border-radius:5px;
+}
+.ch 
+{
+	width:20%; 
+	text-align:center; 
+	padding:15px; 
+	border:thin solid #990000; 
+	display:inline-block;
+	margin:10px;
+	border-radius:10px;
+	background-color:#fff;
+}
+@media screen and (max-width: 600px) { 
+	.login { width:60%; }
+	
+  	.ch 
+{
+	width:60%; 
+	
+}
+}
+.chn input[type=text], select {
+	width: 100%;
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    resize: vertical;
+	color:#000;
+	
+}
+#menu_list {
+	width: 100%;
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    resize: vertical;
+	color:#000;
+}
+
+.chn input[type=submit], input[type=button] {
+	
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    resize: vertical;
+	background-color:#a90329;
+	color:#fff;
+	cursor:pointer;
+}
+.tools input[type=text],input[type=email], textarea, input[type=password], select {
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #036;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	color:#000;
+}
+.tools input[type=submit], input[type=button] {
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+	background-color:#d20000;
+	color:#fff;
+	cursor:pointer;
+}
+footer { 
+	
+	display:block;
+	width:100%;
+	background-color:#000;
+	color:#fff;
+	padding:15px;
+	border-top:#D20000 solid thick;
+	text-align:center;
+}
