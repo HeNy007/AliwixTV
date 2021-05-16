@@ -144,7 +144,7 @@ function myFunction() {
 function showPage() {
 	
 	     
-   	window.location.href = 'index.php?view=home';                 
+   	window.location.href = 'index.php';                 
 	      
 	
   
