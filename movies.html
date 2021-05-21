@@ -14,116 +14,82 @@
   <title>Aliwix TV App</title> 
   </head>   
  <body> 
-  <script type="text/javascript">
-if( navigator.userAgent.match(/Build/i)
-
- ) {
-        
-        }else{
-             if(!navigator.userAgent.match(/ipad|iphone/i)) {
-           // window.location.href = "https://afghansky.net";
-             }
-        }
-</script> 
-  <script>	
-function cls(id){
-
-	$("#popup"+id).css("display","none");
-	
-	//var date = new Date();
-	//date.setTime(date.getTime() + (60 * 1000));
-	//$.cookie('msg', 'yes', { expires: date });
-	
-	
-}
-</script> 
-  <div id="mySidenav" class="sidenav"> 
+   <div id="mySidenav" class="sidenav"> 
    <a href="javascript:void(0)" tabindex="1" class="closebtn" onclick="closeNav()"><i class="fas fa-reply" style="font-size:24px; margin-top:10px;"></i></a> 
    <table width="100%" border="0" height="400"> 
     <tbody>
      <tr> 
       <td align="right"> <i class="fas fa-home" style="font-size:28px; padding-left:10px; color:#fff;"></i></td> 
-      <td align="right"><a tabindex="2" href="home"> <span>الصفحة الرئيسية</span> <br>Home </a></td> 
+      <td align="right"><a tabindex="2" href="go:home">الصفحة الرئيسية</a></td> 
      </tr> 
      <tr> 
-      <td align="right"> <i class="fas fa-tv" style="font-size:24px; color:#fff;"></i></td> 
-      <td align="right"><a tabindex="3" href="index.php?view=login"> <span>البث المباشر </span> <br>Live TV </a></td> 
+      <td align="right"> <i class="fas fa-compact-disc" style="font-size:24px; color:#fff;"></i></td> 
+      <td align="right"><a tabindex="3" href="go:series">مسلسلات مترجمة</a></td> 
      </tr> 
      <tr> 
-      <td align="right"> <i class="fas fa-film" style="font-size:28px; color:#fff;"></i></td> 
-      <td align="right"><a tabindex="4" href="index.php?view=login"> <span>أفلام و مسلسلات</span> <br>Movies &amp; Series </a></td> 
+      <td align="right"> <i class="fas fa-video" style="font-size:28px; color:#fff;"></i></td> 
+      <td align="right"><a tabindex="4" href="go:movies">أفلام مترجمة</a></td> 
      </tr> 
      <tr> 
-      <td align="right"> <i class="fas fa-fire" style="font-size:28px; padding-right:5px; color:#fff;"></i></td> 
-      <td align="right"><a tabindex="5" href="index.php?view=login"> <span>أنمي مترجم</span> <br>Anime </a></td> 
+      <td align="right"> <i class="fas fa-paw" style="font-size:28px; padding-right:5px; color:#fff;"></i></td> 
+      <td align="right"><a tabindex="5" href="go:anime">أنمي مترجم</a></td> 
+     </tr> 
+      <tr> 
+      <td align="right"> <i class="fas fa-upload" style="font-size:28px; padding-right:5px; color:#fff;"></i></td> 
+      <td align="right"><a tabindex="6" href="go:chat">أطلب فيلمك من هنا</a></td> 
      </tr> 
      <tr> 
-      <td align="right"> <i class="fab fa-facebook-messenger" style="font-size:24px; color:#fff;"></i></td> 
-      <td align="right"><a tabindex="6" href="http://m.me/aliwixteam2"> <span>إتصل بنا</span> <br>Contact Us </a> </td> 
-     </tr> 
      <tr> 
-      <td align="right"> <a tabindex="7" href="javascript:void(0)" onclick="starts('close');" style="bottom:10; left:25%; position: absolute;"> 
-        <div style="text-align: center; border: #fff solid thin; border-radius: 5px; padding: 10px; padding-left: 20px; padding-right: 20px; "> 
-         <span>خروج</span> | Exit
-        </div> </a></td> 
+      <td align="right"> <i class="fa fa-info-circle" style="font-size:24px; color:#fff;"></i></td> 
+      <td align="right"><a tabindex="7" href="index.php?view=about">سياسة الخصوصية</a></td> 
      </tr> 
+     
     </tbody>
    </table> 
-   <script>
-function starts(url){
-    
-		
-    window.AppInventor.setWebViewString(url);
-    var myVar = setTimeout(pup, 3000);
-
-    
-    }
-    
-    
-    function pup(){
-
-    
-    
-    window.AppInventor.setWebViewString("");
-    
-    }
-</script> 
+   
   </div> 
   <table width="100%" border="0"> 
    <tbody>
     <tr> 
-     <td width="15%" align="left" valign="top"><img src="img/007menu.jpg" class="openbtn" onclick="openNav()"></td> 
-     <td width="70%" rowspan="2" align="center"><img id="logo" src="img/logo01.png"></td> 
-     <td width="15%" align="center"></td> 
+    <td width="15%" align="left" valign="top"><img src="img/007menu.jpg" class="openbtn" onclick="openNav()"></td> 
+    <td width="70%" rowspan="2" align="center"><img id="logo" src="img/logo01.png"></td> 
+    <td width="15%" align="center"></td> 
     </tr> 
     <tr> 
-     <td>&nbsp;</td> 
-     <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
     </tr> 
    </tbody>
   </table> 
   <br>
-  <br> 
- <div class="main">
- <a class="menu" tabindex="1" href="go:requests2"> <img title="Aliwix" src="https://i.top4top.io/p_1852k5lgz0.jpeg"> <span>قسم الطلبات</span></a> 
- <a class="menu" tabindex="1" href="go:wuffyserie"> <img title="Series TN" src="https://media.elcinema.com/uploads/_315x420_a81fe2e189324c7b189d289fb2f787cd16f5dff6dba899f6dd0bbae2f3e2873f.jpg"> <span>Tunisian Series</span></a> 
- <a class="menu" tabindex="2" href="go:seriestr"> <img title="Series TR" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1vogI5dRGXzzrcUpetJSnGZXA1tJMrGr8ASC0JSF4pO51k2d5teGwRmoA8UHsF3RyXV9l6eci7kSwDvWC25OVuiMLSmpLrQ7DA&usqp=CAU&ec=45751767"> <span>Turkish Series</span></a> 
- <a class="menu" tabindex="3" href="go:serieswr"> <img title="Universal Series" src="https://static.arageek.com/wp-content/uploads/2017/10/BeFunky-Collage-4.jpg"> <span>Universal Series</span></a> 
- <a class="menu" tabindex="4" href="go:seriesar"> <img title="Arabic Series" src="https://www.e7kky.com/uploads/article/internal/images/أفضل-المسلسلات-العربية-التي-لمست-قلوبنا-واستمتعنا-بها.jpeg"> <span>Arabic Series</span></a> 
- <a class="menu" tabindex="5" href="go:soon"> <img title="Ramadan" src="https://www.zarkachat.com/wp-content/uploads/2019/05/ramadan-series-458.jpg"> <span>Ramadan 🌛</span></a> 
- <a class="menu" tabindex="6" href="go:soon"> <img title="Islamic Series" src="https://i.ytimg.com/vi/GCuXw-hToZ4/maxresdefault.jpg"> <span>Islamic Series</span></a> 
-  </div> 
+  <div class="main">
+  <a class="menu" tabindex="1" href="go:requests"> <img title="Aliwix" src="https://i.top4top.io/p_1852k5lgz0.jpeg"> <span>قسم الطلبات</span></a> 
+     <a class="menu" tabindex="1" href="go:wuffymovie"> <img title="Aliwix" src="https://imgsrc.cineserie.com/2018/09/1356320.jpg"> <span>Tunisian</span></a>
+    <a class="menu" tabindex="1" href="go:horror"> <img title="Aliwix" src="https://horrorfuel.com/wp-content/uploads/2019/10/ed-e1570233071974.jpg"> <span>Horror</span></a> 
+    <a class="menu" tabindex="1" href="go:thriller"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/44-90.jpg"> <span>Thriller</span></a> 
+    <a class="menu" tabindex="1" href="go:drama"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/03-1159.jpg"> <span>Drama</span></a> 
+    <a class="menu" tabindex="1" href="go:comedy"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/03-1113.jpg"> <span>Comedy</span></a> 
+    <a class="menu" tabindex="1" href="go:soon"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/0000000000-49.jpg"> <span>History</span></a> 
+    <a class="menu" tabindex="1" href="go:action"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/YpTSjfo.jpg"> <span>Action</span></a> 
+    <a class="menu" tabindex="1" href="go:soon"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/0-9760.jpg"> <span>Crime</span></a> 
+    <a class="menu" tabindex="1" href="go:soon"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/03-421.jpg"> <span>Sci-Fi</span></a> 
+    <a class="menu" tabindex="1" href="go:soon"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/1-14.jpg"> <span>Romance</span></a> 
+    <a class="menu" tabindex="1" href="go:war"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/0-9628.jpg"> <span>War</span></a> 
+    <a class="menu" tabindex="1" href="go:bio"> <img title="Aliwix" src="http://cima4u.io/wp-content/uploads/UXzinEA.jpg"> <span>Biography</span></a> 
+    
+    
+    </div> 
   <script>
-function openNav() {
+  function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
+  }
+  
+  function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-}
-</script> 
+  }
+  </script> 
   <div class="footer">
    Copyright © 2021 by Aliwix Team
   </div>  
- </body>
-</html>
+   </body>
+  </html>
