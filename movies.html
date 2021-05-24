@@ -136,6 +136,23 @@ function starts(url){
   </div> 
   </div>
   </div>
+  <script type="text/javascript">
+//<![CDATA[
+  jQuery(document).ready(function($){
+  $('#ExternalsponserContainer1').delay(100).fadeIn('medium');
+  
+  $("#closeBtn , .clossalert").click(function() {
+    $("#alert_content").slideToggle(300);
+    $("#pin_x").toggleClass('fa-minus fa-plus');
+    if (readCookie('app_box')) {} else {createCookie ('app_box','true',5);}
+  });
+  if (readCookie('app_box')) {
+  $("#alert_content").slideToggle(300);
+  $("#pin_x").toggleClass('fa-minus fa-plus');
+  }
+  });
+//]]>
+  </script> 
   <script>
   function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
