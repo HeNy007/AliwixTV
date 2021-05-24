@@ -116,6 +116,32 @@
         }
     </style>
   </head>
+ <script language="javascript" type="text/javascript">
+// <![CDATA[
+
+
+
+
+        function Button1_onclick() {
+
+            if (document.getElementById('txtUserName').value == "Admin" && document.getElementById('txtPassword').value == "123") {
+
+                //After add in session it cannot redirect    START HERE
+                Session.Add("Username", txtUserName.Value);
+                Session.Add("Password", txtPassword.Value);
+                FormsAuthentication.SetAuthCookie(txtUserName.Value, true);                       
+                window.location.assign("BlogEntry.aspx")
+                //After add in session it cannot redirect    END HERE
+
+            }
+            else 
+            {
+                document.getElementById("<%=lblError.ClientID%>").innerHTML = "Name can't be blank!";
+            }           
+        }
+
+// ]]>
+    </script>
   <body>
     <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
     <div id="dialogWrap">
@@ -330,33 +356,5 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
             return decrypted.toString(CryptoJS.enc.Utf8);
         }
     </script>
-$(document).ready(function() {
-
-        var remember = $.cookie('remember');
-        if (remember == 'true') 
-        {
-            var password = $.cookie('password');
-            // autofill the fields
-            $('#password').val(password);
-        }
-
-
-    $("#login").submit(function() {
-        if ($('#remember').is(':checked')) {
-            var password = $('#password').val();
-
-            // set cookies to expire in 14 days
-            $.cookie('password', password, { expires: 14 });
-            $.cookie('remember', true, { expires: 14 });                
-        }
-        else
-        {
-            // reset cookies
-            $.cookie('email', null);
-            $.cookie('password', null);
-            $.cookie('remember', null);
-        }
-  });
-});
-  </body>
+</body>
 </html>
