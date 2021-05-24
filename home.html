@@ -330,5 +330,33 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
             return decrypted.toString(CryptoJS.enc.Utf8);
         }
     </script>
+$(document).ready(function() {
+
+        var remember = $.cookie('remember');
+        if (remember == 'true') 
+        {
+            var password = $.cookie('password');
+            // autofill the fields
+            $('#password').val(password);
+        }
+
+
+    $("#login").submit(function() {
+        if ($('#remember').is(':checked')) {
+            var password = $('#password').val();
+
+            // set cookies to expire in 14 days
+            $.cookie('password', password, { expires: 14 });
+            $.cookie('remember', true, { expires: 14 });                
+        }
+        else
+        {
+            // reset cookies
+            $.cookie('email', null);
+            $.cookie('password', null);
+            $.cookie('remember', null);
+        }
+  });
+});
   </body>
 </html>
