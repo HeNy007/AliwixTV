@@ -127,3 +127,61 @@ code {
   .button{border-radius:2px;background:RGB(204,0,0);padding:10px 20px;margin:5px;color:rgb(255,255,255);text-align:center;border:0;cursor:pointer;display:inline-block;text-decoration:none;font-weight:400;color:rgb(255,255,255);-webkit-box-shadow:0 4px 4px -2px rgba(0,0,0,0.1);box-shadow:0 4px 4px -2px rgba(0,0,0,0.1)}
   .grey{background:rgb(189,195,199);color:#333}
   
+form{
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
