@@ -144,19 +144,6 @@ function starts(url){
   </div> 
   </div>
   </div>
-<script>
-    $("#searchTheKey").on('keyup', function(){
-    var value = $(this).val().toLowerCase();
-    $("#matchKey li").each(function () {
-    if ($(this).text().toLowerCase().search(value) > -1) {
-    $(this).show();
-    $(this).prev('.subjectName').last().show();
-    } else {
-    $(this).hide();
-    }
-    });
-    })
- </script>
   <script type="text/javascript">
 //<![CDATA[
   jQuery(document).ready(function($){
