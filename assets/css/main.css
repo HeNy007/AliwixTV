@@ -86,7 +86,7 @@ body {
 .menu{
   display:inline-block;
   width:110px;
-  margin:15px;
+  margin:0;
   text-align:center;
   text-decoration:none;
   color:#fff;
