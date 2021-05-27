@@ -1,74 +1,4 @@
- //<![CDATA[
-  jQuery(document).ready(function($){
-  $('#ExternalsponserContainer1').delay(100).fadeIn('medium');
-  
-  $("#closeBtn , .clossalert").click(function() {
-    $("#alert_content").slideToggle(300);
-    $("#pin_x").toggleClass('fa-minus fa-plus');
-    if (readCookie('app_box')) {} else {createCookie ('app_box','true',5);}
-  });
-  if (readCookie('app_box')) {
-  $("#alert_content").slideToggle(300);
-  $("#pin_x").toggleClass('fa-minus fa-plus');
-  }
-  });
-//]]>
-
-
- /* search by HeNy007
- ****************************/
-var s = $('input'),
- f  = $('form'),
- a = $('.after'),
- m = $('h4');
- 
- s.focus(function(){
- if( f.hasClass('open') ) return;
- f.addClass('in');
- setTimeout(function(){
- f.addClass('open');
- f.removeClass('in');
- }, 1300);
- });
- 
- a.on('click', function(e){
- e.preventDefault();
- if( !f.hasClass('open') ) return;
- s.val('');
- f.addClass('close');
- f.removeClass('open');
- setTimeout(function(){
- f.removeClass('close');
- }, 1300);
- })
- 
- f.submit(function(e){
- e.preventDefault();
- m.html('Thanks, high five!').addClass('show');
- f.addClass('explode');
- setTimeout(function(){
- s.val('');
- f.removeClass('explode');
- m.removeClass('show');
- }, 3000);
- })
-
-
-
-$("#searchTheKey").on('keyup', function(){
-    var value = $(this).val().toLowerCase();
-    $("#matchKey li").each(function () {
-    if ($(this).text().toLowerCase().search(value) > -1) {
-    $(this).show();
-    $(this).prev('.subjectName').last().show();
-    } else {
-    $(this).hide();
-    }
-    });
-    })
-
-
-document.addEventListener('DOMContentLoaded', function(event) {
+ document.addEventListener('DOMContentLoaded', function(event) {
       window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
           (window.cookieOptions && cookieOptions.msg) || 'Diese Website verwendet Cookies von Google, um Dienste anzubieten und Zugriffe zu analysieren. Deine IP-Adresse und dein User-Agent werden zusammen mit Messwerten zur Leistung und Sicherheit f\xfcr Google freigegeben. So k\xf6nnen Nutzungsstatistiken generiert, Missbrauchsf\xe4lle erkannt und behoben und die Qualit\xe4t des Dienstes gew\xe4hrleistet werden.',
           (window.cookieOptions && cookieOptions.close) || 'OK',
@@ -78,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 //<![CDATA[
    //JS Cookie    // createCookie (name,value,days) // readCookie(name) // eraseCookie(name)
   function createCookie(c,d,e){if(e){var b=new Date();b.setTime(b.getTime()+(e*60*1000));var a="; expires="+b.toGMTString()}else{var a=""}document.cookie=c+"="+d+a+"; path=/"}function readCookie(b){var e=b+"=";var a=document.cookie.split(";");for(var d=0;d<a.length;d++){var f=a[d];while(f.charAt(0)==" "){f=f.substring(1,f.length)}if(f.indexOf(e)==0){return f.substring(e.length,f.length)}}return null}function eraseCookie(a){createCookie(a,"",-1)};
-  
-  // tab bug fix
+   // tab bug fix
   $( document ).ready(function() {
   if( document.querySelectorAll('[id^=tab].tab.tab_content').length > 1){
   var textBoxes = document.querySelectorAll('[id^=tab].tab.tab_content');
@@ -91,9 +20,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
   }
   });
   //]]>
-
-
-
 _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'headercontent', document.getElementById('Header1'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML35', 'alcssmenu', document.getElementById('HTML35'), {}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML20', 'news-slider-col', document.getElementById('HTML20'), {}, 'displayModeFull'));
