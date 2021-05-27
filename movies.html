@@ -137,7 +137,76 @@ function starts(url){
 <div class="footer">
    Copyright © 2021 by Aliwix Team
   </div> 
-<!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.--> 
+  <script>
+//<![CDATA[
+  jQuery(document).ready(function($){
+  $('#ExternalsponserContainer1').delay(100).fadeIn('medium');
+  
+  $("#closeBtn , .clossalert").click(function() {
+    $("#alert_content").slideToggle(300);
+    $("#pin_x").toggleClass('fa-minus fa-plus');
+    if (readCookie('app_box')) {} else {createCookie ('app_box','true',5);}
+  });
+  if (readCookie('app_box')) {
+  $("#alert_content").slideToggle(300);
+  $("#pin_x").toggleClass('fa-minus fa-plus');
+  }
+  });
+//]]>
+
+
+ /* search by HeNy007
+ ****************************/
+var s = $('input'),
+ f  = $('form'),
+ a = $('.after'),
+ m = $('h4');
+ 
+ s.focus(function(){
+ if( f.hasClass('open') ) return;
+ f.addClass('in');
+ setTimeout(function(){
+ f.addClass('open');
+ f.removeClass('in');
+ }, 1300);
+ });
+ 
+ a.on('click', function(e){
+ e.preventDefault();
+ if( !f.hasClass('open') ) return;
+ s.val('');
+ f.addClass('close');
+ f.removeClass('open');
+ setTimeout(function(){
+ f.removeClass('close');
+ }, 1300);
+ })
+ 
+ f.submit(function(e){
+ e.preventDefault();
+ m.html('Thanks, high five!').addClass('show');
+ f.addClass('explode');
+ setTimeout(function(){
+ s.val('');
+ f.removeClass('explode');
+ m.removeClass('show');
+ }, 3000);
+ })
+
+
+
+$("#searchTheKey").on('keyup', function(){
+    var value = $(this).val().toLowerCase();
+    $("#matchKey li").each(function () {
+    if ($(this).text().toLowerCase().search(value) > -1) {
+    $(this).show();
+    $(this).prev('.subjectName').last().show();
+    } else {
+    $(this).hide();
+    }
+    });
+    })
+</script>
   <script defer src="/js/cookienotice.js"></script> 
   <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3464975383-widgets.js"></script> 
   <script type="text/javascript" src="/assets/js/007.js"></script> 
