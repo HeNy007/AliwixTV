@@ -1,78 +1,213 @@
-
-<!DOCTYPE>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>if statements</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js">
+  </script>
+<script src='assets/js/a076d05399.js'></script>
+<title>Aliwix TV App</title>
+<script>
+document.addEventListener('DOMContentLoaded', function(event) {
+     window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+         (window.cookieOptions && cookieOptions.msg) || 'Diese Website verwendet Cookies von Google, um Dienste anzubieten und Zugriffe zu analysieren. Deine IP-Adresse und dein User-Agent werden zusammen mit Messwerten zur Leistung und Sicherheit f\xfcr Google freigegeben. So k\xf6nnen Nutzungsstatistiken generiert, Missbrauchsf\xe4lle erkannt und behoben und die Qualit\xe4t des Dienstes gew\xe4hrleistet werden.',
+         (window.cookieOptions && cookieOptions.close) || 'OK',
+         (window.cookieOptions && cookieOptions.learn) || 'Weitere Informationen',
+         (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
+   });
+//<![CDATA[
+  //JS Cookie    // createCookie (name,value,days) // readCookie(name) // eraseCookie(name)
+ function createCookie(c,d,e){if(e){var b=new Date();b.setTime(b.getTime()+(e*60*1000));var a="; expires="+b.toGMTString()}else{var a=""}document.cookie=c+"="+d+a+"; path=/"}function readCookie(b){var e=b+"=";var a=document.cookie.split(";");for(var d=0;d<a.length;d++){var f=a[d];while(f.charAt(0)==" "){f=f.substring(1,f.length)}if(f.indexOf(e)==0){return f.substring(e.length,f.length)}}return null}function eraseCookie(a){createCookie(a,"",-1)};
+  // tab bug fix
+ $( document ).ready(function() {
+ if( document.querySelectorAll('[id^=tab].tab.tab_content').length > 1){
+ var textBoxes = document.querySelectorAll('[id^=tab].tab.tab_content');
+ for(var i in textBoxes){
+ if(i = 0){} else {
+ textBoxes[i].style.display="none";
+ }
+ }
+ }
+ });
+ //]]>
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'headercontent', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML35', 'alcssmenu', document.getElementById('HTML35'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML20', 'news-slider-col', document.getElementById('HTML20'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'korapost', document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML992', 'korapost', document.getElementById('HTML992'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML991', 'korapost', document.getElementById('HTML991'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'korapost', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1416520984-lbx__ar.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/1050234869-lightbox_bundle_rtl.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML903', 'korapost', document.getElementById('HTML903'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML900', 'korapost', document.getElementById('HTML900'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML106', 'korapost', document.getElementById('HTML106'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML108', 'korapost', document.getElementById('HTML108'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList56', 'social-counter', document.getElementById('LinkList56'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-wrapper', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-wrapper', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label2', 'sidebar-wrapper', document.getElementById('Label2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar-wrapper', document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeedView', new _WidgetInfo('Feed1', 'sidebar-wrapper', document.getElementById('Feed1'), {'title': '', 'showItemDate': false, 'showItemAuthor': false, 'feedUrl': 'http://live.coolkora.com/feeds/posts/default', 'numItemsShow': 5, 'loadingMsg': '\u062c\u0627\u0631\u064d \u0627\u0644\u062a\u062d\u0645\u064a\u0644...', 'openLinksInNewWindow': false, 'useFeedWidgetServ': 'true'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar-wrapper', document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'gallery', document.getElementById('HTML8'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML52', 'alba-tabs-wid', document.getElementById('HTML52'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML21', 'tab1', document.getElementById('HTML21'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML22', 'tab2', document.getElementById('HTML22'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML23', 'tab3', document.getElementById('HTML23'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML24', 'tab4', document.getElementById('HTML24'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML25', 'tab5', document.getElementById('HTML25'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML26', 'all', document.getElementById('HTML26'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML43', 'footer-custom_text', document.getElementById('HTML43'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML17', 'alba-vcover-item', document.getElementById('HTML17'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML111', 'alert-mobAnddesk', document.getElementById('HTML111'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML112', 'alert-mobAnddesk', document.getElementById('HTML112'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML113', 'adsmobandcomp', document.getElementById('HTML113'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML114', 'adsmobandcomp', document.getElementById('HTML114'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML115', 'adsmobandcomp', document.getElementById('HTML115'), {}, 'displayModeFull'));
+
+</script>
 </head>
+<style>
+body{
+	height: 100vh;
+background-image: linear-gradient(to bottom right, #000, #000);
+}
+/* Center the loader */
+#loader {
+		position:fixed !important;
+		z-index:1000;
+		text-align:center;
+		width:100%;
+        height:100vh;
+        display:block;
+        
+}
 
-PHP
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
 
-<body>
-Login
-<form action="username.php" method="post">
-  <p>
-    <label for="username">Enter your username</label>
-    <input type="text" name="username" id="username" />
-  </p>
-  <p>
-    <label for="password">Enter your password</label>
-    <input type="text" name="password" id="password" />
-  </p>
-  <p>
-    <label for="GO"></label>
-    <input type="submit" name="GO" id="GO" value="Submit" />
-  </p>
-</form>
-</body>
-</html>
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #06C;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+</style>
+<body onload="myFunction()">
+<!----------------------------------Loading Page ----------------------------------------->
+<div id="loader">
+<br /><br /><br /><br /><br /><br />
+<table width="100%" height="50%" border="0" align="center" style="text-align:center;">
+  <tr>
+    <td><img src="img/logo01.png" style="width:250px;"/></td>
+  </tr>
+  <tr>
+    <td><div class="lds-ellipsis"><div style="background-color:#F00"></div><div style="background-color:#FF0"></div><div style="background-color:#F09"></div><div style="background-color:#00F"></div></div>
+</div></td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+  </tr>
+</table><br>
+<br /><br /><a href="https://facebook.com/aliwixteam2/"><i class="fab fa-facebook-f" style='color:#fff; font-size:32px;'></i></a> &nbsp;&nbsp;
+<a href="https://www.youtube.com/channel/henybnhamed"><i style='color:#fff;font-size:32px;' class="fab fa-youtube"></i></a> &nbsp;&nbsp;
+<a href="https://wa.me/21626095930"><i style='color:#fff;font-size:32px;' class="fab fa-whatsapp"></i></a> &nbsp;&nbsp;
+<a href="https://t.me/AliwixTv"><i style='color:#fff;font-size:32px;' class="fa fa-paper-plane"></i></a> &nbsp;&nbsp;
+<!------------------------------------End Loading --------------------------------------->
+<script>
+var myVar;
+var width = screen.width;
+function myFunction() {
+  myVar = setTimeout(showPage,1500);
+}
+
+function showPage() {
+	
+	     
+   	window.location.href = 'home.html';                 
+	      
+	
+  
+}
 
 
 
-<html>
-<body>
 
-<?php
-session_start();
-If($username==”admin” && $password==”123”)
-
-    $username = isset($_POST['username']) ;
-    $password = isset($_POST['password']) ;
-
-    if ($name != 'admin' || $pass != '123')
-    {
-        elseif ($username === '')
-            die("ERROR: Please enter the username!");
-
-        elseif ($password === '')
-            die("ERROR: Please enter the password!");
-
-        elseif ($name == "test" && $pass == "test") {
-
-            // authentication successful, save username in session:
-            $_SESSION['user'] = 'admin';
-
-            // redirect to index.php to welcome the logged in user:
-            header('Location: index.html');
-            exit;
-        }
-        else {
-            die("ERROR: Incorrect username or password!");
-        }
-    }
-
-
-    ?>
-
-
-
-
-
-
-
-
-
-
-
+</script>
 </body>
 </html>
