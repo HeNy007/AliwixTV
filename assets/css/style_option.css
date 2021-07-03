@@ -375,3 +375,11 @@ p {
  color: #fff;
  }
  }
+
+
+
+/* ====== Adblock ====== */
+#unblocker{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.95)!important;opacity:.98;display:block;z-index:9999;overflow:hidden}
+#unblocker p{color:#fff!important;text-align:center;margin: auto;font-size:1.5rem;max-width:750px;display:table;line-height:1.5;margin-top: 15%}
+#unblocker p:before{content:'\023';font-family:fontawesome;background:#37b06d;color:#fff;text-align:center;display:block;padding:0;width:2em;height:2em;line-height:2em;font-size:2.5rem;clear:both;border-radius:100%;margin:0 auto 3%;font-weight:normal;box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)}
+#unblocker p:hover:before{content:'\13e'}
