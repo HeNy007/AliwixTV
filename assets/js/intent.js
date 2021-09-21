@@ -10,10 +10,7 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 Intent intent = IntentUtils.openPlayStore(getApplicationContext());
 startActivity(intent);
-Intent intent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("market://details?id=" + context.getPackageName()));
-startActivity(intent);
-     
+
 
 
 
