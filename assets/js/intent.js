@@ -7,44 +7,6 @@ function vlcplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.lo
 function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="wvc-x-callback://open?url="+a+"&secure_uri=true"}};
 
 
-function onShouldStartLoadWithRequest(request){
-
-  // short circuit these
-  if (!request.url ||
-    request.url.startsWith('http') ||
-    request.url.startsWith("/") ||
-    request.url.startsWith("#") ||
-    request.url.startsWith("javascript") ||
-    request.url.startsWith("about:blank")
-  ) {
-    return true;
-  }
-
-  // blocked blobs
-  if(request.url.startsWith("blob")){
-    Alert.alert("Link cannot be opened.");
-    return false;
-  }
-
-  // list of schemas we will allow the webview
-  // to open natively
-  if(request.url.startsWith("tel:") ||
-    request.url.startsWith("mailto:") ||
-    request.url.startsWith("maps:") ||
-    request.url.startsWith("geo:") ||
-    request.url.startsWith("sms:")
-    ){
-
-    Linking.openURL(request.url).catch(er => {
-      Alert.alert("Failed to open Link: " + er.message);
-    });
-    return false;
-  }
-
-  // let everything else to the webview
-  return true;
-}
-
 
 
      if (!checkUrlValid(decoded_url)) {
@@ -92,16 +54,3 @@ _onShouldStartLoadWithRequest = (event) => {
 
 
 
-const webViewRef = React.useRef(null);
-
-<WebView
-  ref={webViewRef}
-  setSupportMultipleWindows={true}
-  onError={({nativeEvent}) => {
-              // Function that is invoked when the WebView load fails.
-              if (nativeEvent.url.startsWith('tel:') && nativeEvent.canGoBack) {
-                // Fallback for tel links without target="_blank"
-                webViewRef.current.goBack();
-              }
-           }}
-/>
