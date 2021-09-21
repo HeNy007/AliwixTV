@@ -11,4 +11,11 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-
+try {
+  $('#link').attr('href', "<scheme>://<co.wuffy.player>/?<parameters>");
+  $("#link")[0].click(); 
+} catch (error) {
+  if (confirm('Wuffy player not installed, do you want to download it now?')) {
+    window.location = 'https://play.google.com/store/apps/details?id=co.wuffy.player';
+  } 
+}
