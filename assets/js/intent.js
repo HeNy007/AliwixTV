@@ -27,3 +27,32 @@ mWebView.setWebViewClient(new WebViewClient(){
     } 
 }); 
 mWebView.loadUrl(url); 
+
+webview.setWebViewClient(new WebViewClient() {
+           String currentUrl;
+
+           @Override
+           public boolean shouldOverrideUrlLoading(WebView view, String url) {
+               currentUrl = url;
+
+               if (url.startsWith("http") || url.startsWith("https")) {
+                   return false;
+               }
+               if (url.startsWith("intent")) {
+
+
+
+
+                 try {
+                     Intent intent = Intent.parseUri(url, Intent.URI_INTENT_SCHEME);
+
+                     String fallbackUrl = intent.getStringExtra("browser_fallback_url");
+                   if (fallbackUrl != null) {
+                       webview.loadUrl(fallbackUrl);
+                       return true;
+                   }}
+
+               catch (URISyntaxException e) {
+                   //not an intent uri
+               }
+       return true;//do nothing in other cases
