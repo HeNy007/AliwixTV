@@ -6,27 +6,7 @@ function intent(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.loc
 function vlcplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback://x-callback-url/stream?url=URL"+b+"&sub=aliwixplay.netlify.app"}};
 function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="wvc-x-callback://open?url="+a+"&secure_uri=true"}};
 
-import android.content.Intent;
-import android.net.Uri;
-mWebView = (WebView) findViewById(R.id.web_view); 
 
-WebSettings webSettings = mWebView.getSettings(); 
-webSettings.setJavaScriptEnabled(true); 
-
-mWebView.setWebViewClient(new WebViewClient(){
-    @Override 
-    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        if( url.startsWith("http:") || url.startsWith("https:") ) {
-            return false; 
-        } 
-
-        // Otherwise allow the OS to handle things like tel, mailto, etc. 
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity( intent );
-        return true; 
-    } 
-}); 
-mWebView.loadUrl(url); 
 
 webview.setWebViewClient(new WebViewClient() {
            String currentUrl;
