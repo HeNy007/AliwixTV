@@ -9,38 +9,7 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-     if (!checkUrlValid(decoded_url)) {
-       Log.d("WebView","!checkUrlValid ");
-
-       boolean res=super.shouldOverrideUrlLoading(view, url);
-       if (res){
-         Log.d("WebView","res=true ");
-       }else{
-         Log.d("WebView","res=false ");
-       }
-       return  res;//false 时 不回调 RN 的 handleShouldStartLoadWithRequest 方法
-     } else {//以下是此方法的原始代码
-       Log.d("WebView","Do your special things");
-
-       // Do your special things
-       activeUrl = url;
-       dispatchEvent(  //调 RN 的 handleShouldStartLoadWithRequest 方法
-         view,
-         new TopShouldStartLoadWithRequestEvent(
-           view.getId(),
-           createWebViewEvent(view, url)));
-
-       return true;
-     }
-   }
-
-
-$(document).ready(function(){ $('#openApp').click();});
-
-
-
-
-
+     
 _onShouldStartLoadWithRequest = (event) => {
   const { url } = event;
   if (url.startsWith('intent://') && url.includes('scheme=http') && Platform.OS === 'android') {
