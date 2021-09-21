@@ -14,7 +14,7 @@ function redirectToApp()
   $("#link")[0].click(); 
 } catch (error) {
   if (confirm('You need to install wuffy player, do you want to download it now?')) {
-    window.location = 'https://play.google.com/store/apps/details?id=123';
+    window.location = 'https://play.google.com/store/apps/details?id=co.wuffy.player';
     document.title = 'wuffy player not installed';
   } 
 }
