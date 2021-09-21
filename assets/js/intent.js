@@ -8,9 +8,6 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-Intent intent = IntentUtils.openPlayStore(getApplicationContext());
-startActivity(intent);
-
 
 
 
