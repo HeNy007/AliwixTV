@@ -15,6 +15,9 @@ function redirectToApp()
 } catch (error) {
   if (confirm('You need to install wuffy player, do you want to download it now?')) {
     window.location = 'https://play.google.com/store/apps/details?id=co.wuffy.player';
-    document.title = 'wuffy player not installed';
-  } 
+      } 
 }
+
+"googlechrome://navigate?url=" + url
+
+i.e. window.open("googlechrome://navigate?url=" + url,"_system"); // here you can try with _system or _blank as per your requirement
