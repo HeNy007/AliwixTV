@@ -9,4 +9,15 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 $(document).ready(function(){ $('#openApp').click();});
 
 
+var fallbackToStore = function() {
+  window.location.replace('https://play.google.com/store/apps/details?id=co.wuffy.player');
+};
+var openApp = function() {
+  window.location.replace('intent://xmtv/SplashScreen#Intent;scheme=xmtv;package=co.wuffy.player;end');
+};
+var triggerAppOpen = function() {
+  openApp();
+  setTimeout(fallbackToStore, 700);
+};
 
+triggerAppOpen();
