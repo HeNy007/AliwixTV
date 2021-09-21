@@ -76,18 +76,6 @@ function onShouldStartLoadWithRequest(request){
 $(document).ready(function(){ $('#openApp').click();});
 
 
-var fallbackToStore = function() {
-  window.location.replace('https://play.google.com/store/apps/details?id=co.wuffy.player');
-};
-var openApp = function() {
-  window.location.replace('intent://app/SplashScreen#Intent;scheme=app_;package=co.wuffy.player;end');
-};
-var triggerAppOpen = function() {
-  openApp();
-  setTimeout(fallbackToStore, 700);
-};
-
-triggerAppOpen();
 
 
 
