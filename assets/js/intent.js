@@ -17,3 +17,15 @@ try {
     window.location = 'https://play.google.com/store/apps/details?id=co.wuffy.player';
   } 
 }
+
+
+function redirectToApp() {
+$('#link').attr('href', "<scheme>://<package>/?<parameters>");
+$("#link")[0].click();
+setTimeout(
+        function() {
+          if (confirm('You do not seem to have app installed, do you want to download it now?')) {
+            window.location = 'https://play.google.com/store/apps/details?id=com.instantbits.cast.webvideo';
+                      } 
+        }, 500);
+}
