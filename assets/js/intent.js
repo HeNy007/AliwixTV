@@ -10,14 +10,7 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
      
-_onShouldStartLoadWithRequest = (event) => {
-  const { url } = event;
-  if (url.startsWith('intent://') && url.includes('scheme=http') && Platform.OS === 'android') {
-    SendIntentAndroid.openChromeIntent(url);
-    return false;
-  }
-  return true;
-}
+
 
 
 
