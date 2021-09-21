@@ -13,12 +13,3 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-
-window.onload = function() {
-    var clickTarget = document.getElementById("clickTarget");
-    var fakeMouseEvent = document.createEvent('MouseEvents');
-    fakeMouseEvent.initMouseEvent("click", true, true, window,
-        0, 0, 0, 20, 10, false, false, false, false, 0, null);
-
-    clickTarget.dispatchEvent(fakeMouseEvent);
-  };
