@@ -8,3 +8,13 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
+function redirectToApp()
+ {
+  $('#link').attr('href', "<scheme>://<package>/?<parameters>");
+  $("#link")[0].click(); 
+} catch (error) {
+  if (confirm('You need to install wuffy player, do you want to download it now?')) {
+    window.location = 'https://play.google.com/store/apps/details?id=123';
+    document.title = 'wuffy player not installed';
+  } 
+}
