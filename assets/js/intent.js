@@ -12,14 +12,3 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-public boolean shouldOverrideUrlLoading(WebView view, String url) {
-    if (url.startsWith("intent:")) { 
-        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(url)); 
-        startActivity(intent);
-        view.reload();
-        return true;
-    }
-
-    view.loadUrl(url);
-    return true;
-}
