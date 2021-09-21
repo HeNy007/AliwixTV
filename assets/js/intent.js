@@ -8,13 +8,12 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 $(document).ready(function(){ $('#openApp').click();});
 
-function redirectToApp()
- {
+try {
   $('#link').attr('href', "<scheme>://<package>/?<parameters>");
   $("#link")[0].click(); 
 } catch (error) {
-  if (confirm('You need to install wuffy player, do you want to download it now?')) {
-    window.location = 'https://play.google.com/store/apps/details?id=123';
-      } 
+  if (confirm('You do not seem to have app installed, do you want to download it now?')) {
+    window.location = 'https://play.google.com/store/apps/details?id=co.wuffy.player';
+  } 
 }
 
