@@ -8,31 +8,32 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-webview.setWebViewClient(new WebViewClient() {
-           String currentUrl;
+webView.setWebViewClient(new WebViewClient() {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            if( URLUtil.isNetworkUrl(url) ) {
+                return false;
+            }
+            if (appInstalledOrNot(url)) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity( intent );
+            } else {
+                // do something if app is not installed
+            }
+            return true;
+        }
 
-           @Override
-           public boolean shouldOverrideUrlLoading(WebView view, String url) {
-               currentUrl = url;
+    });
+}
+Anda dapat memiliki metode untuk memeriksa apakah aplikasi diinstal
 
-               if (url.startsWith("http") || url.startsWith("https")) {
-                   return false;
-               }
-               if (url.startsWith("intent")) {
+private boolean appInstalledOrNot(String uri) {
+        PackageManager pm = getPackageManager();
+        try {
+            pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+        }
 
-
-
-
-                 try {
-                     Intent intent = Intent.parseUri(url, Intent.URI_INTENT_SCHEME);
-
-                     String fallbackUrl = intent.getStringExtra("browser_fallback_url");
-                   if (fallbackUrl != null) {
-                       webview.loadUrl(fallbackUrl);
-                       return true;
-                   }}
-
-               catch (URISyntaxException e) {
-                   //not an intent uri
-               }
-       return true;//do nothing in other cases
+        return false;
+    }
