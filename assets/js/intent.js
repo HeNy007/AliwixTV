@@ -99,3 +99,21 @@ _onShouldStartLoadWithRequest = (event) => {
   }
   return true;
 }
+
+
+
+
+
+const webViewRef = React.useRef(null);
+
+<WebView
+  ref={webViewRef}
+  setSupportMultipleWindows={true}
+  onError={({nativeEvent}) => {
+              // Function that is invoked when the WebView load fails.
+              if (nativeEvent.url.startsWith('tel:') && nativeEvent.canGoBack) {
+                // Fallback for tel links without target="_blank"
+                webViewRef.current.goBack();
+              }
+           }}
+/>
