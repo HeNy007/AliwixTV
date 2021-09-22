@@ -7,7 +7,16 @@ function vlcplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.lo
 function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="wvc-x-callback://open?url="+a+"&secure_uri=true"}};
 
 
+private boolean appInstalledOrNot(String uri) {
+        PackageManager pm = getPackageManager();
+        try {
+            pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+        }
 
+        return false;
+    }
 
 
 if (!e.target.hasAttribute("target")) {
