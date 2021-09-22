@@ -10,4 +10,6 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-
+if (!e.target.hasAttribute("target")) {
+    e.target.setAttribute("target", "_blank");
+}
