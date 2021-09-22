@@ -11,8 +11,3 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-WebviewScaffold(
-   url: url,
-   invalidUrlRegex: '^intent:',
-);
-
