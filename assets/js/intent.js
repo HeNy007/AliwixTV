@@ -16,17 +16,3 @@ WebviewScaffold(
    invalidUrlRegex: '^intent:',
 );
 
-_subscription = webViewPlugin.onUrlChanged.listen((String url) async {
-      print("navigating to...$url");
-      if (url.startsWith("intent") || url.startsWith("wvc-x-callback") || url.startsWith("http") || url.startsWith("https"))
-      {
-        await webViewPlugin.stopLoading();
-        await webViewPlugin.goBack();
-        if (await canLaunch(url))
-        {
-           await launch(url);
-           return;
-        }
-        print("couldn't launch $url");
-      }
-    });
