@@ -1,3 +1,5 @@
+document.getElementById('download').click();
+
 function download(filename) {
     if (typeof filename==='undefined') filename = ""; // default
     value = document.getElementById('textarea_area').value;
