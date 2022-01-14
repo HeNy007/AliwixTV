@@ -85,7 +85,7 @@ body {
 } 
 .menu{
   display:inline-block;
-  width:130px;
+  width:125px;
   margin:15px;
   text-align:center;
   text-decoration:none;
@@ -100,8 +100,8 @@ body {
   
 }
 .menu img{
-  width:120px;
-  height:120px;
+  width:115px;
+  height:115px;
   width:100%;
   border-radius:10px;
 	border:solid thick #484848;
