@@ -85,7 +85,8 @@ body {
 } 
 .menu{
   display:inline-block;
-  width:110px;
+  width:90%;
+  margin:18px;
   text-align:center;
   text-decoration:none;
   color:#fff;
