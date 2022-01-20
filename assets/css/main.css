@@ -108,6 +108,31 @@ body {
 	margin-bottom:5px;
 	background-color:#fff;
 }
+.menuu{
+  display:inline-block;
+  width:125px;
+  margin:12px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  font-size:12px;
+  outline:none;
+  box-sizing:border-box;
+}
+
+.menu:focus{
+  transform: scale(1.5);
+  
+}
+.menuu img{
+  width:115px;
+  height:115px;
+  width:100%;
+  border-radius:100%;
+	border:solid thick #484848;
+	margin-bottom:5px;
+	background-color:#fff;
+}
 .popup {
   margin: 70px auto;
   padding: 20px;
