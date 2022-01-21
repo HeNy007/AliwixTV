@@ -10,27 +10,3 @@ function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.locat
 
 
 
-if (!e.target.hasAttribute("target")) {
-    e.target.setAttribute("target", "_blank");
-}
-
-mywebview.webViewClient = object : WebViewClient() {
-           override fun shouldOverrideUrlLoading(webView: WebView, url: String): Boolean {
-               if (url.startsWith("intent://")) {
-                   val intent = Intent.parseUri(url, Intent.URI_INTENT_SCHEME)
-                   if (intent != null) {
-                       val fallbackUrl = intent.getStringExtra("browser_fallback_url")
-                       return if (fallbackUrl != null) {
-                           webView.loadUrl(fallbackUrl)
-                           true
-                       } else {
-                           false
-                       }
-                   }
-               }
-               return false
-           }
-       }
-
-
-
