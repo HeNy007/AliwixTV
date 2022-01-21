@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+span{
+font-size:10px;
+  font-family: 'Cairo', sans-serif;
 body {
 	background-color: #000;
-	font-family: 'Mochiy Pop P One', sans-serif;
 }	
 .sidenav {
   height: 100%;
