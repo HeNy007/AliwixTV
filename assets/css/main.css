@@ -108,7 +108,7 @@ body {
   height:120px;
   width:100%;
   border-radius:10px;
-	border:solid thick #484848;
+	border:solid thick #fff;
 	margin-bottom:5px;
 	background-color:#fff;
 }
@@ -134,7 +134,7 @@ body {
   height:125px;
   width:100%;
   border-radius:100%;
-	border:solid thick #484848;
+	border:solid thick #fff;
 	margin-bottom:5px;
 	background-color:#fff;
 }
