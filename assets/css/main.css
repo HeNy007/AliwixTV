@@ -88,8 +88,8 @@ body {
 } 
 .menu{
   display:inline-block;
-  width:125px;
-  margin:9px;
+  width:127px;
+  margin:5px;
   text-align:center;
   text-decoration:none;
   color:#fff;
@@ -104,8 +104,8 @@ body {
   
 }
 .menu img{
-  width:115px;
-  height:120px;
+  width:117px;
+  height:125px;
   width:100%;
   border-radius:10px;
 	border:solid thick #fff;
