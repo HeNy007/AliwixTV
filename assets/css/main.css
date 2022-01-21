@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+   
+
 body {
 	background-color: #000;
 	font-family: Verdana, Geneva, sans-serif;
@@ -86,11 +89,12 @@ body {
 .menu{
   display:inline-block;
   width:125px;
-  margin:12px;
+  margin:9px;
   text-align:center;
   text-decoration:none;
   color:#fff;
-  font-size:12px;
+  font-size:10px;
+  font-family: 'Mochiy Pop P One', sans-serif;
   outline:none;
   box-sizing:border-box;
 }
@@ -108,25 +112,26 @@ body {
 	margin-bottom:5px;
 	background-color:#fff;
 }
-.menuu{
+.menu2{
   display:inline-block;
   width:125px;
-  margin:12px;
+  margin:9px;
   text-align:center;
   text-decoration:none;
   color:#fff;
-  font-size:12px;
+  font-size:10px;
+ font-family: 'Mochiy Pop P One', sans-serif;
   outline:none;
   box-sizing:border-box;
 }
 
-.menu:focus{
+.menu2:focus{
   transform: scale(1.5);
   
 }
-.menuu img{
-  width:115px;
-  height:115px;
+.menu2 img{
+  width:125px;
+  height:125px;
   width:100%;
   border-radius:100%;
 	border:solid thick #484848;
