@@ -88,7 +88,7 @@ font-family: 'Harmattan', sans-serif;
 } 
 .menu{
   display:inline-block;
-  width:127px;
+  width:130px;
   margin:7px;
   text-align:center;
   text-decoration:none;
@@ -104,8 +104,8 @@ font-family: 'Harmattan', sans-serif;
   
 }
 .menu img{
-  width:117px;
-  height:125px;
+  width:130px;
+  height:132px;
   width:100%;
   border-radius:10px;
 	border:solid thick #fff;
