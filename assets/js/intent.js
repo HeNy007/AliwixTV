@@ -6,7 +6,9 @@ function intent(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.loc
 function vlcplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback://x-callback-url/stream?url=URL"+b+"&sub=aliwixplay.netlify.app"}};
 function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="wvc-x-callback://open?url="+a+"&secure_uri=true"}};
 
-
+<!--
+document.write('<br>your resolution is'.screen.width+'x'+screen.height)
+//-->
 
 
 
