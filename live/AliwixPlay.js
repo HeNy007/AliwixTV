@@ -1,4 +1,4 @@
-function js_thml(){
+function writeHTMLasJS(){
 	let AliwixPlay = "";
 	AliwixPlay += "  <div id=\"DraGao\" class=\"cards animate__animated animate__zoomIn\"> \n";
 	AliwixPlay += "\t  <div align=\"center\">\n";
@@ -39,5 +39,7 @@ function js_thml(){
 }
 
 
-document.getElementById("js_html").innerText = js_thml();
-document.getElementById("html-text").value = js_thml();
+	document.getElementById("js_html").innerHTML = AliwixPlay;
+}
+
+writeHTMLasJS()
