@@ -516,3 +516,18 @@ p {
   box-shadow: 0px 3px 15px
   }
   
+/* DARKMODE */
+  .darkmode--activated p, .darkmode--activated li {
+  color: #000;
+  }
+  
+  .button {
+  isolation: isolate;
+  }
+  
+  .darkmode--activated .logo {
+  mix-blend-mode: difference;
+  }
+  .darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+  }
