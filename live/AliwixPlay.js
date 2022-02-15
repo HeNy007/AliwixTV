@@ -1,5 +1,5 @@
 function writeHTMLasJS(){
-	let AliwixPlay = "";
+var AliwixPlay = "";
 	AliwixPlay += "  <div id=\"DraGao\" class=\"cards animate__animated animate__zoomIn\"> \n";
 	AliwixPlay += "\t  <div align=\"center\">\n";
 	AliwixPlay += "\t  <div class=\"box-title\">\n";
@@ -35,11 +35,6 @@ function writeHTMLasJS(){
 	AliwixPlay += "  ------------------------------------> </div> \n";
 	AliwixPlay += "  </div> \n";
 	AliwixPlay += "  <br><br>\n";
-	return AliwixPlay;
-}
-
-
 	document.getElementById("js_html").innerHTML = AliwixPlay;
 }
-
-writeHTMLasJS()
+writeHTMLasJS();
