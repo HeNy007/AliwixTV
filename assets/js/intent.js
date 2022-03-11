@@ -4,10 +4,10 @@
    function mx(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent:"+link+"#Intent;scheme=http;type=video/*;package=com.mxtech.videoplayer.ad;S.browser_fallback_url=market://details?id=com.mxtech.videoplayer.ad;S.title=AliwixPlay;end"}};
    function vlc(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback://x-callback-url/stream?url=https://"+link+"&sub=AliwixPlay"}};
    function aliwixplay(){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=link}else{location.href="http://raw.githack.com/HeNy007/AliwixPlayer/main/plyr.html?src=https://"+link}};
-   function http(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-1.html?src="+a}};
-   function https(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-2.html?src="+a}};
-   function userhtpp(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-3.html?src="+a}};
-   function userhttps(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-4.html?src="+a}};
+   function http(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-1.html?src="+a"&sub=AliwixPlay"}};
+   function https(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-2.html?src="+a"&sub=AliwixPlay"}};
+   function userhtpp(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-3.html?src="+a"&sub=AliwixPlay"}};
+   function userhttps(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwix-lite.blogspot.com/p/player-4.html?src="+a"&sub=AliwixPlay"}};
 function wuffyplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent://"+btoa(b)+"#Intent;scheme=xmtv;package=co.wuffy.player;end"}};
 function mxplay(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent:"+a+"#Intent;package=com.mxtech.videoplayer.ad;end"}};
 function mxplay_pro(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+b+"#Intent;package=com.mxtech.videoplayer.pro;end"}};
