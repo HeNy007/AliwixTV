@@ -123,7 +123,7 @@ font-family: 'Harmattan', sans-serif;
   height:132px;
   width:100%;
   border-radius:10px;
-	border:1px solid thick #fff;
+	border:solid thick #fff;
 	margin-bottom:5px;
 	background-color:#fff;
 }
@@ -150,7 +150,7 @@ font-family: 'Harmattan', sans-serif;
   height:132px;
   width:100%;
   border-radius:100%;
-	border:1px solid thick #fff;
+	border:solid thick #fff;
 	margin-bottom:5px;
 	background-color:#fff;
 }
