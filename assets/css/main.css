@@ -125,7 +125,8 @@ font-family: 'Harmattan', sans-serif;
   border-radius:10px;
 	border:solid thick #fff;
 	margin-bottom:5px;
-	background-color:#fff;
+	background: transparent url(https://i.imgur.com/nDzqpqV.png);
+    display: flex;
 }
 .menu2{
   display: flex;
@@ -152,7 +153,8 @@ font-family: 'Harmattan', sans-serif;
   border-radius:100%;
 	border:solid thick #fff;
 	margin-bottom:5px;
-	background-color:#fff;
+	background: transparent url(https://i.imgur.com/nDzqpqV.png);
+    display: flex;
 }
 .popup {
   margin: 70px auto;
