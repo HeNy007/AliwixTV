@@ -5,7 +5,7 @@ function extplay(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.lo
 function intent(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="intent:"+b+"#Intent;action=android.intent.action.VIEW;scheme=http;type=video/mp4;end"}};
 function vlcplay(b){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=b}else{location.href="vlc-x-callback://x-callback-url/stream?url=URL"+b+"&sub=aliwixplay.netlify.app"}};
 function dlna(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="wvc-x-callback://open?url="+a+"&secure_uri=true"}};
-function http(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplay?src="+a"}};
-function https(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplays?src="+a"}};
-function http1(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplay1?src="+a"}};
-function https1(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplays1?src="+a"}};
+function http(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplay?src="+a}};
+function https(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplays?src="+a}};
+function http1(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplay1?src="+a}};
+function https1(btoa(a)){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplays1?src="+a}};
