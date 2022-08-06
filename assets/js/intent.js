@@ -11,3 +11,4 @@ function https(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.loca
 function httpx(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplay1?src="+btoa(a)}};
 function httpsx(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="https://aliwixplay.tn/player/aplays1?src="+btoa(a)}};
 function radio(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="http://aliwixplay.tn/player/radio?src="+btoa(a)}};
+function extrn(a){if(navigator.userAgent.match(/iPhone|iPad|iPod/i)){window.location=a}else{location.href="intent:"+a+"#Intent;action=android.intent.action.VIEW;scheme=http;type=application/*;end"}};
