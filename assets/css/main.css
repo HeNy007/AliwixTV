@@ -115,7 +115,7 @@ font-family: 'Harmattan', sans-serif;
 }
 
 .menu:focus{
-  transform: scale(1.5);
+  transform: scale(1.2);
   
 }
 .menu img{
@@ -144,7 +144,7 @@ font-family: 'Harmattan', sans-serif;
 }
 
 .menu2:focus{
-  transform: scale(1.5);
+  transform: scale(1.2);
   
 }
 .menu2 img{
