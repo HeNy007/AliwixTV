@@ -17,7 +17,7 @@ body {
   flex: 1;/* no need anymore to deal with height/width */
   flex-direction: column;
 font-family: 'Harmattan', sans-serif;
-	background-color: #000;
+	background-color: #042453;
 }	
 .sidenav {
   height: 100%;
